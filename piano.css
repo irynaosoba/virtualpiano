@@ -1,0 +1,121 @@
+body {
+    background-color: #323940;
+    font-family: "Apple Braille", Helvetica, sans-serif;
+}
+
+header {
+    text-align: center;
+    font-size: 38px;
+    font-weight: 200;
+    color: #dedede;
+    border-bottom: 2px solid #a0a0a0;
+}
+
+p {
+    margin: 20px;
+}
+
+#chooseButtons {
+    position: relative;
+    padding-top: 80px;
+    text-align: center;
+    height: 90px;
+}
+
+#chooseButtons button {
+    width: 176px;
+    height: 53px;
+    font-size: 21px;
+    color: #dedede;
+    border: none;
+}
+
+#piano {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+
+}
+
+button, input[type="submit"], input[type="reset"] {
+    background: none;
+    color: inherit;
+    border: none;
+    padding: 0;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
+}
+
+.whiteButtons {
+    width: 95px;
+    height: 365px;
+    background-color: #E0E1E3;
+    border-bottom-left-radius: 18px;
+    border-bottom-right-radius: 18px;
+
+    z-index: 1;
+    margin: 0 5px;
+}
+
+.blackButtons {
+    width: 68px;
+    height: 200px;
+    background-color: #323940;
+    border-bottom-left-radius: 18px;
+    border-bottom-right-radius: 18px;
+
+    z-index: 2;
+    margin: 0 -34px;
+}
+
+.letterKeys {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.lettersForWhite {
+    margin: 13px 45px 0 45px;
+    font-size: 30px;
+    color: #dedede;
+}
+
+.keyboardSharps {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+
+}
+
+.sharpsForBlack {
+    font-size: 30px;
+    color: #dedede;
+
+    margin: 13px 36px;
+}
+
+.keyboardSharps {
+    display: none;
+}
+
+.letterKeys {
+    display: none;
+}
+
+.lettersSharps {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.lettersSharpsForBlack {
+    font-size: 30px;
+    color: #dedede;
+
+    margin: 13px 44px;
+}

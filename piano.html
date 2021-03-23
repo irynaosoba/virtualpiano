@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Virtual Piano</title>
+    <link rel="stylesheet" href="piano.css">
+    <script type="application/javascript" src="piano.js"></script>
+</head>
+<body>
+<header>
+    <p>Virtual piano</p>
+</header>
+
+<div id="display-switch-tabs">
+    <button id="notes-tab" class="tab active" onclick="switchActiveDisplay('notes')">Notes</button>
+    <button id="letters-tab" class="tab" onclick="switchActiveDisplay('letters')">Letters</button>
+</div>
+<div id="piano">
+    <div class="whiteButtonContainer">
+        <a class="whiteButton" onclick="playNote('c')" onmousedown="activeBtn(this)" onmouseup="preActiveBtn(this)"></a>
+        <div class="keyboardKey">D</div>
+        <div class="noteSign">c</div>
+    </div>
+    <div class="blackButtonContainer">
+        <div class="keyboardKey">R</div>
+        <div class="noteSign">c#</div>
+        <a class="blackButton" onclick="playNote('c#')" onmousedown="activeBtn(this)" onmouseup="preActiveBtn(this)"></a>
+    </div>
+    <div class="whiteButtonContainer">
+        <a class="whiteButton" onclick="playNote('d')" onmousedown="activeBtn(this)" onmouseup="preActiveBtn(this)"></a>
+        <div class="keyboardKey">F</div>
+        <div class="noteSign">d</div>
+    </div>
+    <div class="blackButtonContainer">
+        <div class="keyboardKey">T</div>
+        <div class="noteSign">d#</div>
+        <a class="blackButton" onclick="playNote('d#')" onmousedown="activeBtn(this)" onmouseup="preActiveBtn(this)"></a>
+    </div>
+    <div class="whiteButtonContainer">
+        <a class="whiteButton" onclick="playNote('e')" onmousedown="activeBtn(this)" onmouseup="preActiveBtn(this)"></a>
+        <div class="keyboardKey">G</div>
+        <div class="noteSign">e</div>
+    </div>
+    <div class="whiteButtonContainer">
+        <a class="whiteButton" onclick="playNote('f')" onmousedown="activeBtn(this)" onmouseup="preActiveBtn(this)"></a>
+        <div class="keyboardKey">H</div>
+        <div class="noteSign">f</div>
+    </div>
+    <div class="blackButtonContainer">
+        <div class="keyboardKey">U</div>
+        <div class="noteSign">f#</div>
+        <a class="blackButton" onclick="playNote('f#')" onmousedown="activeBtn(this)" onmouseup="preActiveBtn(this)"></a>
+    </div>
+    <div class="whiteButtonContainer">
+        <a class="whiteButton" onclick="playNote('g')" onmousedown="activeBtn(this)" onmouseup="preActiveBtn(this)"></a>
+        <div class="keyboardKey">J</div>
+        <div class="noteSign">g</div>
+    </div>
+    <div class="blackButtonContainer">
+        <div class="keyboardKey">I</div>
+        <div class="noteSign">g#</div>
+        <a class="blackButton" onclick="playNote('g#')" onmousedown="activeBtn(this)" onmouseup="preActiveBtn(this)"></a>
+    </div>
+    <div class="whiteButtonContainer">
+        <a class="whiteButton" onclick="playNote('a')" onmousedown="activeBtn(this)" onmouseup="preActiveBtn(this)"></a>
+        <div class="keyboardKey">K</div>
+        <div class="noteSign">a</div>
+    </div>
+    <div class="blackButtonContainer">
+        <div class="keyboardKey">O</div>
+        <div class="noteSign">a#</div>
+        <a class="blackButton" onclick="playNote('a#')" onmousedown="activeBtn(this)" onmouseup="preActiveBtn(this)"></a>
+    </div>
+    <div class="whiteButtonContainer">
+        <a class="whiteButton" onclick="playNote('b')" onmousedown="activeBtn(this)" onmouseup="preActiveBtn(this)"></a>
+        <div class="keyboardKey">L</div>
+        <div class="noteSign">b</div>
+    </div>
+</div>
+</body>
+</html>

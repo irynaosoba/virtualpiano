@@ -1,0 +1,111 @@
+body {
+    background-color: #323940;
+    font-family: "Apple Braille", Helvetica, sans-serif;
+}
+
+header {
+    text-align: center;
+    font-size: 38px;
+    font-weight: 200;
+    color: #dedede;
+    border-bottom: 2px solid #a0a0a0;
+}
+
+p {
+    margin: 20px;
+}
+
+#display-switch-tabs {
+    position: relative;
+    padding-top: 80px;
+    text-align: center;
+    height: 90px;
+}
+
+#display-switch-tabs .tab {
+    width: 176px;
+    height: 53px;
+    font-size: 21px;
+    color: #dedede;
+    border: none;
+    background-color: #464C53;
+    cursor: pointer;
+}
+
+#display-switch-tabs .tab:focus {
+    outline: none;
+}
+
+#display-switch-tabs .tab.active {
+    background-color: #00B4A4
+}
+
+#piano {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 461px;
+}
+
+.whiteButtonContainer {
+    display: flex;
+    z-index: 1;
+    margin: 0 5px;
+    align-items: center;
+    flex-direction: column;
+    align-self: flex-end;
+}
+
+.whiteButton {
+    display: block;
+    width: 95px;
+    height: 365px;
+    background-color: #E0E1E3;
+    border-bottom-left-radius: 18px;
+    border-bottom-right-radius: 18px;
+    margin-bottom: 10px;
+}
+
+.whiteButtonContainer:hover .keyboardKey{
+    color: #00B4A4;
+}
+
+.whiteButtonContainer:hover .noteSign{
+    color: #00B4A4;
+}
+
+.blackButtonContainer:hover .keyboardKey{
+    color: #00B4A4;
+}
+
+.blackButtonContainer:hover .noteSign{
+    color: #00B4A4;
+}
+
+.blackButtonContainer {
+    display: flex;
+    z-index: 2;
+    margin: 0 -34px;
+    align-items: center;
+    flex-direction: column;
+    align-self: flex-start;
+}
+
+.blackButton {
+    display: block;
+    width: 68px;
+    height: 200px;
+    background-color: #323940;
+    border-bottom-left-radius: 18px;
+    border-bottom-right-radius: 18px;
+    margin-top: 10px;
+}
+
+.keyboardKey, .noteSign {
+    font-size: 30px;
+    color: #dedede;
+}
+
+.keyboardKey {
+    display: none;
+}
